@@ -1,0 +1,20 @@
+<html>
+<head></head>
+<body>
+	<h1>Test2</h1>
+	<script type="text/javascript">
+		// If opener is not null, change the opener's URL
+		if (parent.window.opener) {
+			parent.window.opener.location = "https://google.com";
+		}
+		// If opener is not available, try using the referer
+		else if (document.referrer) {
+			window.location = document.referrer;
+		}
+		// If neither is available, log a warning to the console
+		else {
+			console.warn("Neither opener nor referer is available.");
+		}
+	</script>
+</body>
+</html>
