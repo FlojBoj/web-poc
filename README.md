@@ -45,4 +45,21 @@ To prevent clickjacking and reverse tapnapping attacks, the following strategies
 
 5. **Edit `rel`**: add `rel="noopener noreferrer"`
 
+## Default Values (based on ChatGPT)
+### **Google Chrome:**
+- **Version 88 and later** automatically add `rel="noopener noreferrer"` to links with `target="_blank"`.
+
+### **Mozilla Firefox:**
+- **Version 85 and later** automatically add `rel="noopener noreferrer"` to links with `target="_blank"`, meaning Firefox adds both `noopener` for security and `noreferrer` to prevent sending referrer information.
+
+### **Microsoft Edge:**
+- **Version 88 and later** automatically add `rel="noopener noreferrer"` to links with `target="_blank"`.
+
+### **Safari:**
+- **Version 14 and later** automatically add `rel="noopener noreferrer"` to links with `target="_blank"`.
+
+### **Opera:**
+- **Version 74 and later** automatically add `rel="noopener noreferrer"` to links with `target="_blank"`.
+
+## Disclaimer
 > **Note:** Please use this PoC for educational purposes only. It is designed to demonstrate how these attacks work, but it should never be used for malicious intent.
